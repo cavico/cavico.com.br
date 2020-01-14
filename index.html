@@ -25,31 +25,31 @@
     }
 
     a:hover {
-      color: rgb(0, 127, 127);
       background: rgb(255, 255, 255);
       border-color: rgb(255, 255, 255);
+      color: rgb(0, 127, 127);
     }
 
     .button {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-style: solid;
+      border-width: 1px;
       display: inline-block;
       padding: 0.2rem 1rem;
-      border-width: 1px;
-      border-style: solid;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
       text-decoration: none;
       transform: skewX(-15deg);
     }
 
     @media screen and (min-width: 767px) and (min-height: 767px) {
       body {
-        height: 100%;
-        display: -webkit-box;
+        align-items: center;
         display: -moz-box;
         display: -ms-flexbox;
+        display: -webkit-box;
         display: -webkit-flex;
         display: flex;
-        align-items: center;
+        height: 100%;
         justify-content: center;
       }
     }
@@ -61,14 +61,14 @@
     }
 
     p {
-      margin: 1rem 0;
       font: 1rem/1.61rem "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      margin: 1rem 0;
     }
 
     main {
+      margin: 0 auto;
       max-width: 650px;
       padding: 2rem;
-      margin: 0 auto;
     }
 
     main>*:first-child {
@@ -81,8 +81,8 @@
 
     .hide {
       opacity: 0;
-      position: fixed;
       pointer-events: none;
+      position: fixed;
     }
 
     .lambda {
