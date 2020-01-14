@@ -1,30 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Frontend engineer at Infosys, with 15+ years of experience and strong design background, who strongly
+      advocate user experience and human-centred-design (HCD).">
   <title>Camilo Vitorino da Costa | CAVICO</title>
+  <link rel='preconnect' href='https://www.googletagmanager.com'>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: rgb(0, 127, 127);
+      color: rgb(255, 255, 255);
+      margin: 0;
+    }
+
+    a {
+      color: rgb(255, 255, 255);
+    }
+
+    a:hover {
+      color: rgb(0, 127, 127);
+      background: rgb(255, 255, 255);
+      border-color: rgb(255, 255, 255);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border-width: 1px;
+      border-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      text-decoration: none;
+      transform: skewX(-15deg);
+    }
+
+    @media screen and (min-width: 767px) and (min-height: 767px) {
+      body {
+        height: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1em;
+      margin: 1rem 0;
+    }
+
+    p {
+      margin: 1rem 0;
+      font: 1rem/1.61rem "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+
+    main {
+      max-width: 650px;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+
+    main>*:first-child {
+      margin-top: 0 !important;
+    }
+
+    main>*:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .hide {
+      opacity: 0;
+      position: fixed;
+      pointer-events: none;
+    }
+
+    .lambda {
+      margin-right: -0.1em;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>
-    Camilo Vitorino da Costa | CAVICO
-  </h1>
-  <p>
-    I am a frontend engineer at Infosys, with 15+ years of experience and strong design background, who strongly
-    advocate user experience and human-centred-design (HCD).
-  </p>
-  <p>
-    I started my career in 2004, on a small company in my hometown and along the years I've been improving my
-    development skills, always focusing my efforts on design, agile methodologies, working with the best performance
-    possible and always encouraging team members to give their best.
-  </p>
-  <p>
-    I seek to work alongside members of a team in which everyone has something to bring to the table, where open
-    communication is encouraged and creativity is valued, helping them to navigate through complexity and find creative
-    solutions to the user problems.
-  </p>
-  <p>
-    As an entrepreneur, I have a particular interest in collaborating with startups and small businesses which means of
-    software development and technical advice and help them take their products from the ideation to the achievement
-    stage.
-  </p>
+  <main>
+    <h1>
+      <span class="hide">
+        Camilo Vitorino da Costa
+      </span>
+      <span aria-hidden="true">
+        C<span class="lambda">Λ</span>VICO
+      </span>
+    </h1>
+    <nav>
+      <a class="button" href="https://www.linkedin.com/in/camilovitorino/">LinkedIn</a>
+      <a class="button" href="https://github.com/cavico">GitHub</a>
+    </nav>
+    <p>
+      I am a frontend engineer at Infosys, with 15+ years of experience and strong design background, who strongly
+      advocate user experience and human-centred-design (HCD).
+    </p>
+    <p>
+      I started my career in 2004, on a small company in my hometown and along the years I've been improving my
+      development skills, always focusing my efforts on design, agile methodologies, working with the best performance
+      possible and always encouraging team members to give their best.
+    </p>
+    <p>
+      I seek to work alongside members of a team in which everyone has something to bring to the table, where open
+      communication is encouraged and creativity is valued, helping them to navigate through complexity and find
+      creative
+      solutions to the user problems.
+    </p>
+    <p>
+      As an entrepreneur, I have a particular interest in collaborating with startups and small businesses which means
+      of
+      software development and technical advice and help them take their products from the ideation to the achievement
+      stage.
+    </p>
+  </main>
+
+  <script>
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-22147311-5';
+    script.onload = function () {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        dataLayer.push(arguments);
+      }
+      window.gtag('js', new Date());
+      window.gtag('config', 'UA-22147311-5');
+    };
+
+    document.getElementsByTagName('head')[0].appendChild(script);
+  </script>
 </body>
+
 </html>
